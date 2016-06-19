@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Animals Friends</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME ICONS  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="container">
+        </div>
+    </header>
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+
+                    <h2 style = "color: #FFFFFF">Animals Friends</h2>
+                </a>
+
+            </div>
+
+            <div class="left-div">
+                <div class="user-settings-wrapper">
+                    <ul class="nav">
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <span class="glyphicon glyphicon-cloud" style="font-size: 25px;"></span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LOGO HEADER END-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a class="menu-top-active" href="index.html">Home</a></li>
+                            <li><a href="adoption.html">Adoção</a></li>
+                            <li><a href="mistreatment.html">Maus Tratos</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+              <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">Adocão </h1>
+                    </div>
+                </div>
+				<h4> <a href="http://localhost:8080/ServicoWeb/resource/webService/listadoption" target="_blank">Lista de adoções</a></h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                        <div class="panel-heading">
+                           Informações
+                        </div>
+                        <div class="panel-body">
+                       <form method="POST" action="http://localhost:8080/ServicoWeb/resource/webService/save">
+					   
+						  <div class="form-group">
+							<label for="exampleInputEmail1">Nome</label>
+							<input type="text" class="form-control" name="namePerson" />
+							
+						
+							<label for="exampleInputEmail1">CPF</label>
+							<input type="text" class="form-control" name="cpfPerson" >
+							
+							<label for="exampleInputEmail1">E-mail</label>
+							<input type="mail" class="form-control" name="emailPerson"/>
+							
+							<label for="exampleInputEmail1">Telefone</label>
+							<input type="text" class="form-control" name="telephonePerson"/>
+							
+							<label for="exampleInputEmail1">Celular</label>
+							<input type="text" class="form-control" name="celphonePerson"/>
+							
+							<h1 class="page-head-line"></h1>
+							
+							<label for="exampleInputEmail1">Nome do animal</label>
+							<input type="text" class="form-control" name="nameAnimal"/>
+							
+							<label for="exampleInputEmail1">Espécie</label>
+							<input type="text" class="form-control" name="speciesAnimal"/>
+							
+							<label for="exampleInputEmail1">Peso</label>
+							<input type="text" class="form-control" name="weightAnimal"/>
+							
+							<label for="exampleInputEmail1">Tamanho</label>
+							<input type="text" class="form-control" name="sizetAnimal"/>
+						
+							<label for="exampleInputEmail1">Idade</label>
+							<input type="text" class="form-control" name="ageAnimal"/>
+							
+							<label for="exampleInputEmail1">Raça</label>
+							<input type="text" class="form-control" name="breedAnimal"/>
+							
+							<label for="exampleInputEmail1">Sexo</label></br>
+							<input type="text" class="form-control" name="genderAnimal"/>
+							
+							<label for="exampleInputEmail1">Castrado</label></br>
+							<input type="text" class="form-control" name="castratedAnimal"/>
+							
+							<label for="exampleInputEmail1">Data</label></br>
+							<input type="text" class="form-control" name="registrationDate"/>
+							
+							<label for="exampleInputEmail1">linkVideo</label></br>
+							<input type="text" class="form-control" name="registrationDate"/>
+							
+							<label for="exampleInputEmail1">Estado</label></br>
+							<input type="text" class="form-control" name="stateName"/>
+							
+							<label for="exampleInputEmail1">Cidade</label></br>
+							<input type="text" class="form-control" name="cityName"/>
+							
+							<!--<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" name=""/>
+							Fêmea
+							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" name=""/>
+							Macho</br>
+							
+							<label for="exampleInputEmail1">Castrado</label></br>
+							<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" name=""/>
+							Sim
+							<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" name=""/>
+							Não</br> -->
+							
+							<label for="exampleInputEmail1">Descrição</label>
+							<textarea class="form-control" rows="5" name="descriptionAnimal"></textarea>
+						  </div>
+							
+							<input type="submit" name="Cadastrar" class="btn btn-success" />
+        
+						</form>
+			</div>
+			</div>
+	</div>
+</div>
+        </div>
+    </div>
+   <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2016 Animals Friends | By : Maria Carolina Silva Vanuchi
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
